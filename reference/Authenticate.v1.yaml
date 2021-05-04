@@ -1,0 +1,31 @@
+openapi: 3.0.0
+info:
+  title: Authenticate
+  version: '1.0'
+servers:
+  - url: 'localhost:8080'
+    description: Local
+paths:
+  /scm-rest/api/authenticate:
+    get:
+      summary: Your GET endpoint
+      tags: []
+      responses: {}
+      operationId: get-scm-rest-api-authenticate
+    post:
+      summary: Auth
+      operationId: post-scm-rest-api-authenticate
+      responses:
+        '200':
+          description: OK
+      description: |
+        AuthEnpointe
+components:
+  schemas: {}
+  securitySchemes:
+    API Key - 1:
+      name: API Key
+      type: apiKey
+      in: query
+security:
+  - API Key - 1: []
