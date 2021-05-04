@@ -3,30 +3,93 @@ info:
   title: Authenticate
   version: '1.0'
 servers:
-  - url: 'localhost:8080'
-    description: Local
+  - url: 'https://qa.ipactsolutions.com/scm-rest/api/'
+    description: Staging
 paths:
-  /scm-rest/api/authenticate/c:
-    get:
-      summary: Your GET endpoint
-      tags: []
-      responses: {}
-      operationId: get-scm-rest-api-authenticate
+  /authenticate:
     post:
-      summary: Auth
-      operationId: post-scm-rest-api-authenticate
+      summary: Authenticate-API
+      operationId: post-authenticate
       responses:
         '200':
           description: OK
-      description: |
-        AuthEnpointe
-    parameters: []
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                  result:
+                    type: object
+                    properties:
+                      accessToken:
+                        type: string
+                      userId:
+                        type: string
+                      profileId:
+                        type: string
+                      name:
+                        type: string
+                      email:
+                        type: string
+                      preferences:
+                        type: object
+                        properties:
+                          Customer:
+                            type: object
+                            properties:
+                              view:
+                                type: string
+                              edit:
+                                type: string
+                              create:
+                                type: string
+                              delete:
+                                type: string
+                          Sales Order:
+                            type: object
+                            properties:
+                              view:
+                                type: string
+                              edit:
+                                type: string
+                              create:
+                                type: string
+                              '':
+                                type: string
+                              delete:
+                                type: string
+              examples:
+                Auth Response:
+                  value:
+                    status: success
+                    result:
+                      accessToken: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJzZWN1cmUtc2NtLWFwaSIsImF1ZCI6InNlY3VyZS1zY20tYXBwIiwic3ViIjoiS2lzaG9yZV8wMSIsImV4cCI6MTYyMDk5NjkyMCwibGFuZyI6ImVuIiwiZW50aXR5SWRMaXN0IjoiNjE5LDYyOCw2MzUsNjQ2Iiwidmlld0lkcyI6IjAiLCJvcmdJZCI6IjM2MiIsInVzZXJJZCI6IjM0OTEiLCJzdXBwbGllcklkIjoiMCJ9.vRgaH2z6V1g2-fSqFMnBFt_FyuQGLpXGkBrtm9LGjZEdZKYygKDTE6hj2zZF-k6ZYBIwd2ZUJeqcx-jGEm-eXA
+                      userId: '3491'
+                      profileId: '362'
+                      name: Kishore
+                      email: naveen@ipactsolutions.com
+                      preferences:
+                        Customer:
+                          view: true
+                          edit: true
+                          create: true
+                          delete: false
+                        Sales Order:
+                          view: true
+                          edit: true
+                          create: true
+                          delete: false
+            application/xml:
+              schema:
+                type: object
+                properties:
+                  '':
+                    type:
+                      - string
+                      - object
+              examples:
+                example-1: {}
 components:
   schemas: {}
-  securitySchemes:
-    API Key - 1:
-      name: API Key
-      type: apiKey
-      in: query
-security:
-  - API Key - 1: []
