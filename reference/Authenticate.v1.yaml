@@ -6,7 +6,7 @@ servers:
   - url: 'localhost:8080'
     description: Local
 paths:
-  /scm-rest/api/authenticate:
+  /scm-rest/api/authenticate/c:
     get:
       summary: Your GET endpoint
       tags: []
@@ -20,6 +20,7 @@ paths:
           description: OK
       description: |
         AuthEnpointe
+    parameters: []
 components:
   schemas: {}
   securitySchemes:
