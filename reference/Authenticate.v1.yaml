@@ -2,8 +2,9 @@ openapi: 3.0.0
 info:
   title: Authenticate
   version: '1.0'
+  description: ''
 servers:
-  - url: 'https://qa.ipactsolutions.com/scm-rest/api/'
+  - url: 'https://dev.ipactsolutions.com/scm-rest/api'
     description: Staging
 paths:
   /authenticate:

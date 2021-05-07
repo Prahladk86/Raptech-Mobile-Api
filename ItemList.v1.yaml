@@ -1,0 +1,49 @@
+openapi: 3.0.0
+info:
+  title: ItemList
+  version: '1.0'
+  description: 'List of Items '
+servers:
+  - url: 'https://dev.ipactsolutions.com/scm-rest/api'
+    description: Staging
+paths:
+  /items:
+    get:
+      summary: Your GET endpoint
+      tags: []
+      responses: {}
+      operationId: get-items
+      description: Get Items
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties: {}
+            examples: {}
+      parameters:
+        - schema:
+            type: string
+          in: header
+        - schema:
+            type: integer
+          in: query
+          name: current
+        - schema:
+            type: integer
+          in: query
+          name: rowCount
+        - schema:
+            type: string
+          in: query
+          name: searchBy
+        - schema:
+            type: string
+          in: query
+          name: search
+    parameters: []
+components:
+  schemas: {}
+  securitySchemes: {}
+security:
+  - API Key - 1: []
