@@ -4,7 +4,7 @@ info:
   version: '1.0'
   description: ''
 servers:
-  - url: 'https://dev.ipactsolutions.com/scm-rest/api'
+  - url: 'http://localhost:8080/scm-rest/api'
     description: Staging
 paths:
   /authenticate:
@@ -56,8 +56,6 @@ paths:
                               edit:
                                 type: string
                               create:
-                                type: string
-                              '':
                                 type: string
                               delete:
                                 type: string
