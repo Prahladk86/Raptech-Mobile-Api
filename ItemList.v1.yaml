@@ -19,9 +19,52 @@ paths:
           application/json:
             schema:
               type: object
-              properties: {}
+              properties:
+                status:
+                  type: string
+                result:
+                  type: object
+                  properties:
+                    total:
+                      type: integer
+                    rows:
+                      type: object
+                    supplierName:
+                      type: string
+                    hsnCode:
+                      type: string
+                    supplierId:
+                      type: number
+                    supplierPartNo:
+                      type: string
+                    description:
+                      type: string
+                    currencySymbol:
+                      type: string
+                    entityId:
+                      type: number
+                    itemNo:
+                      type: string
+                    categoryCode:
+                      type: string
+                    itemId:
+                      type: number
+                    uom:
+                      type: string
+                    price:
+                      type: number
+                    entityName:
+                      type: string
+                    mfr:
+                      type: string
+                    currency:
+                      type: integer
             examples:
               Item List Response: {}
+          application/xml:
+            schema:
+              type: object
+              properties: {}
       parameters:
         - schema:
             type: integer
