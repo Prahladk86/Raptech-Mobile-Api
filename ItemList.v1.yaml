@@ -11,56 +11,200 @@ paths:
     get:
       summary: Your GET endpoint
       tags: []
-      responses: {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                  result:
+                    type: object
+                  total:
+                    type: string
+                  rows:
+                    type: object
+                  '':
+                    type: string
+        '':
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                  result:
+                    type: object
+                    properties:
+                      total:
+                        type: string
+                      rows:
+                        type: object
+                        properties:
+                          supplierName:
+                            type: string
+                          hsnCode:
+                            type: string
+                          supplierId:
+                            type: string
+                          supplierPartNo:
+                            type: string
+                          description:
+                            type: string
+                          currencySymbol:
+                            type: string
+                          entityId:
+                            type: number
+                          itemNo:
+                            type: string
+                          categoryCode:
+                            type: string
+                          itemId:
+                            type: number
+                          uom:
+                            type: string
+                          price:
+                            type: number
+                          entityName:
+                            type: string
+                          mfr:
+                            type: string
+                          currency:
+                            type: integer
+              examples:
+                List Response:
+                  value:
+                    status: success
+                    result:
+                      total: 9
+                      rows:
+                        - supplierName: ''
+                          hsnCode: ''
+                          supplierId: 0
+                          supplierPartNo: null
+                          description: Item_Test100
+                          currencySymbol: '&#8377'
+                          entityId: 89
+                          itemNo: '1001'
+                          categoryCode: Abc
+                          itemId: 31530
+                          uom: EA
+                          price: 0
+                          entityName: India
+                          mfr: ''
+                          currency: 2
+                        - supplierName: ''
+                          hsnCode: ''
+                          supplierId: 0
+                          supplierPartNo: null
+                          description: Item_Test100
+                          currencySymbol: '&#8377'
+                          entityId: 89
+                          itemNo: '1001'
+                          categoryCode: Abc
+                          itemId: 31835
+                          uom: EA
+                          price: 0
+                          entityName: India
+                          mfr: ''
+                          currency: 2
+                        - supplierName: ''
+                          hsnCode: ''
+                          supplierId: 0
+                          supplierPartNo: null
+                          description: Item_Test100
+                          currencySymbol: '&#8377'
+                          entityId: 89
+                          itemNo: '1001'
+                          categoryCode: Abc
+                          itemId: 31836
+                          uom: EA
+                          price: 0
+                          entityName: India
+                          mfr: ''
+                          currency: 2
+                        - supplierName: ''
+                          hsnCode: ''
+                          supplierId: 0
+                          supplierPartNo: null
+                          description: Item_test_101
+                          currencySymbol: '&#8377'
+                          entityId: 89
+                          itemNo: Item_test_101
+                          categoryCode: null
+                          itemId: 32084
+                          uom: EA
+                          price: 0
+                          entityName: India
+                          mfr: ''
+                          currency: 2
+                        - supplierName: ''
+                          hsnCode: ''
+                          supplierId: 0
+                          supplierPartNo: null
+                          description: Item_test_100
+                          currencySymbol: '&#8377'
+                          entityId: 89
+                          itemNo: Item_test_100
+                          categoryCode: null
+                          itemId: 32083
+                          uom: EA
+                          price: 0
+                          entityName: India
+                          mfr: ''
+                          currency: 2
+                        - supplierName: ''
+                          hsnCode: ''
+                          supplierId: 0
+                          supplierPartNo: null
+                          description: newaitem3
+                          currencySymbol: '&#8377'
+                          entityId: 89
+                          itemNo: PO_REQUEST_SEQ92
+                          categoryCode: null
+                          itemId: 32163
+                          uom: EA
+                          price: 0
+                          entityName: India
+                          mfr: null
+                          currency: 2
+                        - supplierName: ''
+                          hsnCode: ''
+                          supplierId: 0
+                          supplierPartNo: null
+                          description: newItmem2
+                          currencySymbol: '&#8377'
+                          entityId: 89
+                          itemNo: PO_REQUEST_SEQ91
+                          categoryCode: null
+                          itemId: 32162
+                          uom: EA
+                          price: 0
+                          entityName: India
+                          mfr: null
+                          currency: 2
+                        - supplierName: ''
+                          hsnCode: '12312345'
+                          supplierId: 0
+                          supplierPartNo: null
+                          description: newItm1
+                          currencySymbol: '&#8377'
+                          entityId: 89
+                          itemNo: PO_REQUEST_SEQ90
+                          categoryCode: null
+                          itemId: 32161
+                          uom: EA
+                          price: 0
+                          entityName: India
+                          mfr: ''
+                          currency: 2
       operationId: get-items
       description: Get Items
       requestBody:
         content:
-          application/json:
-            schema:
-              type: object
-              properties:
-                status:
-                  type: string
-                result:
-                  type: object
-                  properties:
-                    total:
-                      type: integer
-                    rows:
-                      type: object
-                    supplierName:
-                      type: string
-                    hsnCode:
-                      type: string
-                    supplierId:
-                      type: number
-                    supplierPartNo:
-                      type: string
-                    description:
-                      type: string
-                    currencySymbol:
-                      type: string
-                    entityId:
-                      type: number
-                    itemNo:
-                      type: string
-                    categoryCode:
-                      type: string
-                    itemId:
-                      type: number
-                    uom:
-                      type: string
-                    price:
-                      type: number
-                    entityName:
-                      type: string
-                    mfr:
-                      type: string
-                    currency:
-                      type: integer
-            examples:
-              Item List Response: {}
           application/xml:
             schema:
               type: object
@@ -70,22 +214,22 @@ paths:
             type: integer
           in: query
           name: current
+          required: true
         - schema:
             type: integer
           in: query
           name: rowCount
+          required: true
         - schema:
             type: string
           in: query
           name: searchBy
+          required: true
         - schema:
             type: string
           in: query
           name: search
-        - schema:
-            type: string
-          in: query
-          name: Authorization
+          required: true
     parameters: []
 components:
   schemas: {}
