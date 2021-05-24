@@ -1,0 +1,157 @@
+openapi: 3.0.0
+info:
+  title: CustomerList
+  version: '1.0'
+servers:
+  - url: 'https://dev.ipactsolutions.com/scm-rest/api'
+    description: Dev
+paths:
+  /customers:
+    get:
+      summary: Your GET endpoint
+      tags: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: boolean
+                  result:
+                    type: object
+                  total:
+                    type: string
+                  rows:
+                    type: object
+                  firstName:
+                    type: string
+                  lastName:
+                    type: string
+                  createdDate:
+                    type: string
+                  entityName:
+                    type: string
+                  customerId:
+                    type: integer
+                  vendorId:
+                    type: string
+                  mobileNo:
+                    type: string
+                  customerName:
+                    type: string
+                  email:
+                    type: string
+                  phoneNo:
+                    type: string
+              examples:
+                Customer List Response:
+                  value:
+                    status: success
+                    result:
+                      total: 9
+                      rows:
+                        - firstName: prabhu
+                          lastName: k
+                          createdDate: '2021-05-20'
+                          entityName: KLM India Entity
+                          customerId: 13
+                          vendorId: '3456'
+                          mobileNo: ''
+                          customerName: Customer-check
+                          email: none@none.com
+                          phoneNo: '7878787878'
+                          status: 0
+                        - firstName: ''
+                          lastName: ''
+                          createdDate: '2021-05-13'
+                          entityName: KLM India Entity
+                          customerId: 11
+                          vendorId: '634346'
+                          mobileNo: ''
+                          customerName: New test customer 01
+                          email: ''
+                          phoneNo: '23984729479'
+                          status: 0
+                        - firstName: ''
+                          lastName: ''
+                          createdDate: '2021-05-13'
+                          entityName: KLM India Entity
+                          customerId: 10
+                          vendorId: '345245'
+                          mobileNo: ''
+                          customerName: New test customer
+                          email: ''
+                          phoneNo: '398472938479'
+                          status: 0
+                        - firstName: shweta
+                          lastName: A
+                          createdDate: '2021-05-13'
+                          entityName: KLM India Entity
+                          customerId: 9
+                          vendorId: '56565'
+                          mobileNo: ''
+                          customerName: custom7
+                          email: none@none.com
+                          phoneNo: '9090909090'
+                          status: 0
+                        - firstName: Dona
+                          lastName: rocx
+                          createdDate: '2021-05-10'
+                          entityName: KLM India Entity
+                          customerId: 6
+                          vendorId: Cus34344
+                          mobileNo: ''
+                          customerName: Jain exports
+                          email: dona@none.com
+                          phoneNo: '2345678909'
+                          status: 0
+                        - firstName: John
+                          lastName: Mc
+                          createdDate: '2021-05-05'
+                          entityName: KLM India Entity
+                          customerId: 2
+                          vendorId: Cus3434
+                          mobileNo: ''
+                          customerName: Airbus
+                          email: john@none.com
+                          phoneNo: '1234567899'
+                          status: 0
+                        - firstName: shweta
+                          lastName: A
+                          createdDate: '2021-05-05'
+                          entityName: KLM India Entity
+                          customerId: 1
+                          vendorId: c4545
+                          mobileNo: ''
+                          customerName: ABL LOGISTICS
+                          email: none@none.com
+                          phoneNo: '8989898989'
+                          status: 0
+        '201':
+          description: Created
+      operationId: get-customers
+      parameters:
+        - schema:
+            type: string
+          in: query
+          name: current
+          required: true
+        - schema:
+            type: string
+          in: query
+          name: rowCount
+          required: true
+        - schema:
+            type: string
+          in: query
+          name: searchBy
+          required: true
+        - schema:
+            type: string
+          in: query
+          name: search
+          required: true
+components:
+  schemas: {}

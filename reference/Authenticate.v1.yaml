@@ -4,8 +4,8 @@ info:
   version: '1.0'
   description: ''
 servers:
-  - url: 'http://localhost:8080/scm-rest/api'
-    description: Staging
+  - url: 'https://dev.ipactsolutions.com/scm-rest/api'
+    description: Dev
 paths:
   /authenticate:
     post:
@@ -64,18 +64,18 @@ paths:
                   value:
                     status: success
                     result:
-                      accessToken: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJzZWN1cmUtc2NtLWFwaSIsImF1ZCI6InNlY3VyZS1zY20tYXBwIiwic3ViIjoiS2lzaG9yZV8wMSIsImV4cCI6MTYyMDk5NjkyMCwibGFuZyI6ImVuIiwiZW50aXR5SWRMaXN0IjoiNjE5LDYyOCw2MzUsNjQ2Iiwidmlld0lkcyI6IjAiLCJvcmdJZCI6IjM2MiIsInVzZXJJZCI6IjM0OTEiLCJzdXBwbGllcklkIjoiMCJ9.vRgaH2z6V1g2-fSqFMnBFt_FyuQGLpXGkBrtm9LGjZEdZKYygKDTE6hj2zZF-k6ZYBIwd2ZUJeqcx-jGEm-eXA
-                      userId: '3491'
-                      profileId: '362'
-                      name: Kishore
-                      email: naveen@ipactsolutions.com
+                      accessToken: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJzZWN1cmUtc2NtLWFwaSIsImF1ZCI6InNlY3VyZS1zY20tYXBwIiwic3ViIjoiS0xNX05ld0FkbWluIiwiZXhwIjoxNjIyNDUzNjA3LCJsYW5nIjoiZW4iLCJlbnRpdHlJZExpc3QiOiIyLDQiLCJ2aWV3SWRzIjoiMCIsIm9yZ0lkIjoiMiIsInVzZXJJZCI6IjIiLCJzdXBwbGllcklkIjoiMCJ9.qGZydITNHTOAIUDkbq55n-rMqCK9eQl1ExCaXd-v5rT5leyIe7MsJ9Ql64sNf4sQ4-ac1oZv3SbO1D0O1dEoTQ
+                      userId: '2'
+                      profileId: '2'
+                      name: KLM
+                      email: vidya@menigmainfosystem.com
                       preferences:
-                        Customer:
+                        salesOrder:
                           view: true
                           edit: true
                           create: true
                           delete: false
-                        Sales Order:
+                        customer:
                           view: true
                           edit: true
                           create: true
@@ -90,5 +90,20 @@ paths:
                       - object
               examples:
                 example-1: {}
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                username:
+                  type: string
+                password:
+                  type: string
+            examples:
+              Credientials:
+                value:
+                  username: KLM_NewAdmin
+                  password: Abcd@123
 components:
   schemas: {}

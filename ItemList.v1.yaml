@@ -4,8 +4,8 @@ info:
   version: '1.0'
   description: 'List of Items '
 servers:
-  - url: 'http://localhost:8080/scm-rest/api'
-    description: Staging
+  - url: 'https://dev.ipactsolutions.com/scm-rest/api'
+    description: Dev
 paths:
   /items:
     get:
@@ -75,132 +75,1767 @@ paths:
                           currency:
                             type: integer
               examples:
-                List Response:
+                Item List Response:
                   value:
                     status: success
                     result:
-                      total: 9
+                      total: 40
                       rows:
-                        - supplierName: ''
-                          hsnCode: ''
-                          supplierId: 0
-                          supplierPartNo: null
-                          description: Item_Test100
-                          currencySymbol: '&#8377'
-                          entityId: 89
-                          itemNo: '1001'
-                          categoryCode: Abc
-                          itemId: 31530
-                          uom: EA
-                          price: 0
-                          entityName: India
-                          mfr: ''
-                          currency: 2
-                        - supplierName: ''
-                          hsnCode: ''
-                          supplierId: 0
-                          supplierPartNo: null
-                          description: Item_Test100
-                          currencySymbol: '&#8377'
-                          entityId: 89
-                          itemNo: '1001'
-                          categoryCode: Abc
-                          itemId: 31835
-                          uom: EA
-                          price: 0
-                          entityName: India
-                          mfr: ''
-                          currency: 2
-                        - supplierName: ''
-                          hsnCode: ''
-                          supplierId: 0
-                          supplierPartNo: null
-                          description: Item_Test100
-                          currencySymbol: '&#8377'
-                          entityId: 89
-                          itemNo: '1001'
-                          categoryCode: Abc
-                          itemId: 31836
-                          uom: EA
-                          price: 0
-                          entityName: India
-                          mfr: ''
-                          currency: 2
-                        - supplierName: ''
-                          hsnCode: ''
-                          supplierId: 0
-                          supplierPartNo: null
-                          description: Item_test_101
-                          currencySymbol: '&#8377'
-                          entityId: 89
-                          itemNo: Item_test_101
+                        - supplierName: SMS Traders
+                          hsnCode: '9087'
+                          supplierId: 10
+                          supplierPartNo: '1234'
+                          description: Skaters-plastic
+                          currencySymbol: INR
+                          entityId: 2
+                          itemNo: '130'
                           categoryCode: null
-                          itemId: 32084
-                          uom: EA
-                          price: 0
-                          entityName: India
+                          itemId: 12
+                          uom: Ea
+                          price: 500
+                          entityName: KLM India Entity
+                          mfr: GHSGH
+                          currency: 2
+                        - supplierName: SMS Traders
+                          hsnCode: '8990'
+                          supplierId: 10
+                          supplierPartNo: '1234'
+                          description: 'mile2u Retailers Analog 40.5 cm X 40.5 cm Wall Clock  (Black, With Glass)'
+                          currencySymbol: INR
+                          entityId: 2
+                          itemNo: '129'
+                          categoryCode: null
+                          itemId: 11
+                          uom: Ea
+                          price: 200
+                          entityName: KLM India Entity
+                          mfr: DGDFF
+                          currency: 2
+                        - supplierName: adore-tech
+                          hsnCode: '9087'
+                          supplierId: 20
+                          supplierPartNo: '12345'
+                          description: Skaters-plastic
+                          currencySymbol: INR
+                          entityId: 2
+                          itemNo: '130'
+                          categoryCode: null
+                          itemId: 12
+                          uom: Ea
+                          price: 135.8
+                          entityName: KLM India Entity
+                          mfr: GHSGH
+                          currency: 2
+                        - supplierName: adore-tech
+                          hsnCode: '8990'
+                          supplierId: 20
+                          supplierPartNo: '4567'
+                          description: 'mile2u Retailers Analog 40.5 cm X 40.5 cm Wall Clock  (Black, With Glass)'
+                          currencySymbol: INR
+                          entityId: 2
+                          itemNo: '129'
+                          categoryCode: null
+                          itemId: 11
+                          uom: Ea
+                          price: 140.98
+                          entityName: KLM India Entity
+                          mfr: DGDFF
+                          currency: 2
+                        - supplierName: adore-tech
+                          hsnCode: '2987'
+                          supplierId: 20
+                          supplierPartNo: '67891'
+                          description: 'oy Shack 1:20 Off Roader Rock Crawler Rechargeable Truck with 2.4Ghz Remote Control Toy for Kids | Drive on Sandy, Rocky, Grassland  (Green)'
+                          currencySymbol: INR
+                          entityId: 2
+                          itemNo: '128'
+                          categoryCode: null
+                          itemId: 10
+                          uom: Ea
+                          price: 200
+                          entityName: KLM India Entity
+                          mfr: JGFG
+                          currency: 2
+                        - supplierName: Book my show
+                          hsnCode: '9087'
+                          supplierId: 9
+                          supplierPartNo: '5656'
+                          description: Skaters-plastic
+                          currencySymbol: GBP
+                          entityId: 2
+                          itemNo: '130'
+                          categoryCode: null
+                          itemId: 12
+                          uom: Ea
+                          price: 100
+                          entityName: KLM India Entity
+                          mfr: GHSGH
+                          currency: 4
+                        - supplierName: Book my show
+                          hsnCode: '8990'
+                          supplierId: 9
+                          supplierPartNo: '5656'
+                          description: 'mile2u Retailers Analog 40.5 cm X 40.5 cm Wall Clock  (Black, With Glass)'
+                          currencySymbol: GBP
+                          entityId: 2
+                          itemNo: '129'
+                          categoryCode: null
+                          itemId: 11
+                          uom: Ea
+                          price: 200
+                          entityName: KLM India Entity
+                          mfr: DGDFF
+                          currency: 4
+                        - supplierName: New supplier
+                          hsnCode: '1234'
+                          supplierId: 8
+                          supplierPartNo: '6767'
+                          description: glass box
+                          currencySymbol: INR
+                          entityId: 2
+                          itemNo: '121'
+                          categoryCode: null
+                          itemId: 3
+                          uom: Ea
+                          price: 789
+                          entityName: KLM India Entity
+                          mfr: KLHGJ
+                          currency: 2
+                        - supplierName: New supplier
+                          hsnCode: ''
+                          supplierId: 8
+                          supplierPartNo: '676776'
+                          description: New item for consumables
+                          currencySymbol: INR
+                          entityId: 2
+                          itemNo: '234234'
+                          categoryCode: Electronics
+                          itemId: 1
+                          uom: Ea
+                          price: 100
+                          entityName: KLM India Entity
                           mfr: ''
                           currency: 2
-                        - supplierName: ''
+                        - supplierName: Sadhana5656
+                          hsnCode: '7878'
+                          supplierId: 12
+                          supplierPartNo: '12331'
+                          description: VOCs in car interiors
+                          currencySymbol: USD
+                          entityId: 2
+                          itemNo: '124'
+                          categoryCode: null
+                          itemId: 6
+                          uom: Ea
+                          price: 134
+                          entityName: KLM India Entity
+                          mfr: JKJK
+                          currency: 1
+                        - supplierName: Sadhana5656
+                          hsnCode: '6767'
+                          supplierId: 12
+                          supplierPartNo: '121341'
+                          description: Press workability evaluations
+                          currencySymbol: USD
+                          entityId: 2
+                          itemNo: '123'
+                          categoryCode: null
+                          itemId: 5
+                          uom: Ea
+                          price: 150
+                          entityName: KLM India Entity
+                          mfr: IPIO
+                          currency: 1
+                        - supplierName: SMS Traders
+                          hsnCode: '9898'
+                          supplierId: 10
+                          supplierPartNo: '6767'
+                          description: APTECHDEALS Micro DC 3-6V Micro Submersible Mini Water Pump Motor Control Electronic Hobby Kit
+                          currencySymbol: INR
+                          entityId: 2
+                          itemNo: '126'
+                          categoryCode: null
+                          itemId: 8
+                          uom: Ea
+                          price: 100
+                          entityName: KLM India Entity
+                          mfr: NMNCM
+                          currency: 2
+                        - supplierName: SMS Traders
+                          hsnCode: '7879'
+                          supplierId: 10
+                          supplierPartNo: '78765'
+                          description: 'Battery Operated, 3 Battteries'
+                          currencySymbol: INR
+                          entityId: 2
+                          itemNo: '125'
+                          categoryCode: null
+                          itemId: 7
+                          uom: Ea
+                          price: 176
+                          entityName: KLM India Entity
+                          mfr: NMNCM
+                          currency: 2
+                        - supplierName: Shobha construct
+                          hsnCode: '6767'
+                          supplierId: 14
+                          supplierPartNo: '7878'
+                          description: Press workability evaluations
+                          currencySymbol: INR
+                          entityId: 2
+                          itemNo: '123'
+                          categoryCode: null
+                          itemId: 5
+                          uom: Ea
+                          price: 100
+                          entityName: KLM India Entity
+                          mfr: IPIO
+                          currency: 2
+                        - supplierName: Shobha construct
+                          hsnCode: '2345'
+                          supplierId: 14
+                          supplierPartNo: '9765433'
+                          description: 'Lithium-ion batteries '
+                          currencySymbol: INR
+                          entityId: 2
+                          itemNo: '122'
+                          categoryCode: null
+                          itemId: 4
+                          uom: Ea
+                          price: 200
+                          entityName: KLM India Entity
+                          mfr: UIU
+                          currency: 2
+                        - supplierName: Sam Exports
+                          hsnCode: '7879'
+                          supplierId: 11
+                          supplierPartNo: '4444'
+                          description: Steelbird SBA-3 R2K Classic Open Face Helmet in White Motorbike Helmet  (White With Plain Visor)
+                          currencySymbol: INR
+                          entityId: 2
+                          itemNo: '127'
+                          categoryCode: null
+                          itemId: 9
+                          uom: Ea
+                          price: 100
+                          entityName: KLM India Entity
+                          mfr: JKJK
+                          currency: 2
+                        - supplierName: null
+                          hsnCode: '2345'
+                          supplierId: 0
+                          supplierPartNo: null
+                          description: 'Lithium-ion batteries '
+                          currencySymbol: INR
+                          entityId: 2
+                          itemNo: '122'
+                          categoryCode: null
+                          itemId: 4
+                          uom: Ea
+                          price: 20
+                          entityName: KLM India Entity
+                          mfr: UIU
+                          currency: 2
+                        - supplierName: null
+                          hsnCode: '1234'
+                          supplierId: 0
+                          supplierPartNo: null
+                          description: glass box
+                          currencySymbol: INR
+                          entityId: 2
+                          itemNo: '121'
+                          categoryCode: null
+                          itemId: 3
+                          uom: Ea
+                          price: 50.55
+                          entityName: KLM India Entity
+                          mfr: KLHGJ
+                          currency: 2
+                        - supplierName: adore-tech
+                          hsnCode: '7879'
+                          supplierId: 20
+                          supplierPartNo: '67676'
+                          description: Steelbird SBA-3 R2K Classic Open Face Helmet in White Motorbike Helmet  (White With Plain Visor)
+                          currencySymbol: INR
+                          entityId: 2
+                          itemNo: '127'
+                          categoryCode: null
+                          itemId: 9
+                          uom: Ea
+                          price: 100
+                          entityName: KLM India Entity
+                          mfr: JKJK
+                          currency: 2
+                        - supplierName: adore-tech
+                          hsnCode: '9898'
+                          supplierId: 20
+                          supplierPartNo: '78787'
+                          description: APTECHDEALS Micro DC 3-6V Micro Submersible Mini Water Pump Motor Control Electronic Hobby Kit
+                          currencySymbol: INR
+                          entityId: 2
+                          itemNo: '126'
+                          categoryCode: null
+                          itemId: 8
+                          uom: Ea
+                          price: 200
+                          entityName: KLM India Entity
+                          mfr: NMNCM
+                          currency: 2
+                        - supplierName: null
+                          hsnCode: '12345'
+                          supplierId: 0
+                          supplierPartNo: null
+                          description: motar
+                          currencySymbol: INR
+                          entityId: 2
+                          itemNo: '188'
+                          categoryCode: null
+                          itemId: 13
+                          uom: Ea
+                          price: 50
+                          entityName: KLM India Entity
+                          mfr: ''
+                          currency: 2
+                        - supplierName: null
+                          hsnCode: '9087'
+                          supplierId: 0
+                          supplierPartNo: ''
+                          description: Skaters-plastic
+                          currencySymbol: INR
+                          entityId: 2
+                          itemNo: '130'
+                          categoryCode: null
+                          itemId: 12
+                          uom: Ea
+                          price: 90
+                          entityName: KLM India Entity
+                          mfr: GHSGH
+                          currency: 2
+                        - supplierName: null
+                          hsnCode: '12345'
+                          supplierId: 0
+                          supplierPartNo: ''
+                          description: motar
+                          currencySymbol: INR
+                          entityId: 2
+                          itemNo: '188'
+                          categoryCode: null
+                          itemId: 13
+                          uom: Ea
+                          price: 120
+                          entityName: KLM India Entity
+                          mfr: ''
+                          currency: 2
+                        - supplierName: Sam Exports
+                          hsnCode: '9087'
+                          supplierId: 11
+                          supplierPartNo: ''
+                          description: Skaters-plastic
+                          currencySymbol: INR
+                          entityId: 2
+                          itemNo: '130'
+                          categoryCode: null
+                          itemId: 12
+                          uom: Ea
+                          price: 123
+                          entityName: KLM India Entity
+                          mfr: GHSGH
+                          currency: 2
+                        - supplierName: Sam Exports
+                          hsnCode: '8990'
+                          supplierId: 11
+                          supplierPartNo: ''
+                          description: 'mile2u Retailers Analog 40.5 cm X 40.5 cm Wall Clock  (Black, With Glass)'
+                          currencySymbol: INR
+                          entityId: 2
+                          itemNo: '129'
+                          categoryCode: null
+                          itemId: 11
+                          uom: Ea
+                          price: 123
+                          entityName: KLM India Entity
+                          mfr: DGDFF
+                          currency: 2
+                        - supplierName: null
+                          hsnCode: ''
+                          supplierId: 0
+                          supplierPartNo: ''
+                          description: Consumable item for JO
+                          currencySymbol: PLN
+                          entityId: 2
+                          itemNo: '23123'
+                          categoryCode: null
+                          itemId: 16
+                          uom: Ea
+                          price: 89
+                          entityName: KLM India Entity
+                          mfr: ''
+                          currency: 5
+                        - supplierName: null
+                          hsnCode: ''
+                          supplierId: 0
+                          supplierPartNo: ''
+                          description: New Sales item 79
+                          currencySymbol: PLN
+                          entityId: 2
+                          itemNo: '9458029'
+                          categoryCode: null
+                          itemId: 15
+                          uom: Ea
+                          price: 78
+                          entityName: KLM India Entity
+                          mfr: ''
+                          currency: 5
+                        - supplierName: adore-tech
+                          hsnCode: '12345'
+                          supplierId: 20
+                          supplierPartNo: ''
+                          description: motar
+                          currencySymbol: INR
+                          entityId: 2
+                          itemNo: '188'
+                          categoryCode: null
+                          itemId: 13
+                          uom: Ea
+                          price: 0
+                          entityName: KLM India Entity
+                          mfr: ''
+                          currency: 2
+                        - supplierName: adore-tech
+                          hsnCode: '9087'
+                          supplierId: 20
+                          supplierPartNo: ''
+                          description: Skaters-plastic
+                          currencySymbol: INR
+                          entityId: 2
+                          itemNo: '130'
+                          categoryCode: null
+                          itemId: 12
+                          uom: Ea
+                          price: 0
+                          entityName: KLM India Entity
+                          mfr: GHSGH
+                          currency: 2
+                        - supplierName: null
+                          hsnCode: ''
+                          supplierId: 0
+                          supplierPartNo: ''
+                          description: New Sales item 79
+                          currencySymbol: INR
+                          entityId: 2
+                          itemNo: '9458029'
+                          categoryCode: null
+                          itemId: 15
+                          uom: Ea
+                          price: 10
+                          entityName: KLM India Entity
+                          mfr: ''
+                          currency: 2
+                        - supplierName: null
+                          hsnCode: '12345'
+                          supplierId: 0
+                          supplierPartNo: ''
+                          description: motar
+                          currencySymbol: INR
+                          entityId: 2
+                          itemNo: '188'
+                          categoryCode: null
+                          itemId: 13
+                          uom: Ea
+                          price: 20
+                          entityName: KLM India Entity
+                          mfr: ''
+                          currency: 2
+                        - supplierName: null
                           hsnCode: ''
                           supplierId: 0
                           supplierPartNo: null
-                          description: Item_test_100
-                          currencySymbol: '&#8377'
-                          entityId: 89
-                          itemNo: Item_test_100
-                          categoryCode: null
-                          itemId: 32083
-                          uom: EA
+                          description: New item for consumables
+                          currencySymbol: INR
+                          entityId: 2
+                          itemNo: '234234'
+                          categoryCode: Electronics
+                          itemId: 1
+                          uom: Ea
                           price: 0
-                          entityName: India
+                          entityName: KLM India Entity
                           mfr: ''
                           currency: 2
-                        - supplierName: ''
+                        - supplierName: null
+                          hsnCode: '7878'
+                          supplierId: 0
+                          supplierPartNo: ''
+                          description: VOCs in car interiors
+                          currencySymbol: INR
+                          entityId: 2
+                          itemNo: '124'
+                          categoryCode: null
+                          itemId: 6
+                          uom: Ea
+                          price: 0
+                          entityName: KLM India Entity
+                          mfr: JKJK
+                          currency: 2
+                        - supplierName: null
+                          hsnCode: '6767'
+                          supplierId: 0
+                          supplierPartNo: ''
+                          description: Press workability evaluations
+                          currencySymbol: INR
+                          entityId: 2
+                          itemNo: '123'
+                          categoryCode: null
+                          itemId: 5
+                          uom: Ea
+                          price: 0
+                          entityName: KLM India Entity
+                          mfr: IPIO
+                          currency: 2
+                        - supplierName: adore-tech
+                          hsnCode: '12345'
+                          supplierId: 20
+                          supplierPartNo: ''
+                          description: motar
+                          currencySymbol: INR
+                          entityId: 2
+                          itemNo: '188'
+                          categoryCode: null
+                          itemId: 13
+                          uom: Ea
+                          price: 100
+                          entityName: KLM India Entity
+                          mfr: ''
+                          currency: 2
+                        - supplierName: adore-tech
+                          hsnCode: ''
+                          supplierId: 20
+                          supplierPartNo: ''
+                          description: Bearing sales item
+                          currencySymbol: INR
+                          entityId: 2
+                          itemNo: '734634'
+                          categoryCode: null
+                          itemId: 17
+                          uom: Ea
+                          price: 100
+                          entityName: KLM India Entity
+                          mfr: ''
+                          currency: 2
+                        - supplierName: null
                           hsnCode: ''
                           supplierId: 0
                           supplierPartNo: null
-                          description: newaitem3
-                          currencySymbol: '&#8377'
-                          entityId: 89
-                          itemNo: PO_REQUEST_SEQ92
+                          description: Bearing sales item
+                          currencySymbol: INR
+                          entityId: 2
+                          itemNo: '734634'
                           categoryCode: null
-                          itemId: 32163
-                          uom: EA
-                          price: 0
-                          entityName: India
-                          mfr: null
-                          currency: 2
-                        - supplierName: ''
-                          hsnCode: ''
-                          supplierId: 0
-                          supplierPartNo: null
-                          description: newItmem2
-                          currencySymbol: '&#8377'
-                          entityId: 89
-                          itemNo: PO_REQUEST_SEQ91
-                          categoryCode: null
-                          itemId: 32162
-                          uom: EA
-                          price: 0
-                          entityName: India
-                          mfr: null
-                          currency: 2
-                        - supplierName: ''
-                          hsnCode: '12312345'
-                          supplierId: 0
-                          supplierPartNo: null
-                          description: newItm1
-                          currencySymbol: '&#8377'
-                          entityId: 89
-                          itemNo: PO_REQUEST_SEQ90
-                          categoryCode: null
-                          itemId: 32161
-                          uom: EA
-                          price: 0
-                          entityName: India
+                          itemId: 17
+                          uom: Ea
+                          price: 12
+                          entityName: KLM India Entity
                           mfr: ''
                           currency: 2
+                        - supplierName: null
+                          hsnCode: '9087'
+                          supplierId: 0
+                          supplierPartNo: ''
+                          description: Skaters-plastic
+                          currencySymbol: EUR
+                          entityId: 2
+                          itemNo: '130'
+                          categoryCode: null
+                          itemId: 12
+                          uom: Ea
+                          price: 100.25
+                          entityName: KLM India Entity
+                          mfr: GHSGH
+                          currency: 6
+                        - supplierName: null
+                          hsnCode: '8990'
+                          supplierId: 0
+                          supplierPartNo: ''
+                          description: 'mile2u Retailers Analog 40.5 cm X 40.5 cm Wall Clock  (Black, With Glass)'
+                          currencySymbol: EUR
+                          entityId: 2
+                          itemNo: '129'
+                          categoryCode: null
+                          itemId: 11
+                          uom: Ea
+                          price: 50.25
+                          entityName: KLM India Entity
+                          mfr: DGDFF
+                          currency: 6
+                        - supplierName: Sadhana5656
+                          hsnCode: '12345'
+                          supplierId: 12
+                          supplierPartNo: '1212'
+                          description: motar
+                          currencySymbol: INR
+                          entityId: 2
+                          itemNo: '188'
+                          categoryCode: null
+                          itemId: 13
+                          uom: Ea
+                          price: 50
+                          entityName: KLM India Entity
+                          mfr: ''
+                          currency: 2
+                        - supplierName: Sadhana5656
+                          hsnCode: '9087'
+                          supplierId: 12
+                          supplierPartNo: '1234'
+                          description: Skaters-plastic
+                          currencySymbol: INR
+                          entityId: 2
+                          itemNo: '130'
+                          categoryCode: null
+                          itemId: 12
+                          uom: Ea
+                          price: 50
+                          entityName: KLM India Entity
+                          mfr: GHSGH
+                          currency: 2
+                        - supplierName: Sadhana5656
+                          hsnCode: '8990'
+                          supplierId: 12
+                          supplierPartNo: '1234'
+                          description: 'mile2u Retailers Analog 40.5 cm X 40.5 cm Wall Clock  (Black, With Glass)'
+                          currencySymbol: INR
+                          entityId: 2
+                          itemNo: '129'
+                          categoryCode: null
+                          itemId: 11
+                          uom: Ea
+                          price: 50
+                          entityName: KLM India Entity
+                          mfr: DGDFF
+                          currency: 2
+                        - supplierName: Sadhana5656
+                          hsnCode: '2987'
+                          supplierId: 12
+                          supplierPartNo: '145'
+                          description: 'oy Shack 1:20 Off Roader Rock Crawler Rechargeable Truck with 2.4Ghz Remote Control Toy for Kids | Drive on Sandy, Rocky, Grassland  (Green)'
+                          currencySymbol: INR
+                          entityId: 2
+                          itemNo: '128'
+                          categoryCode: null
+                          itemId: 10
+                          uom: Ea
+                          price: 50
+                          entityName: KLM India Entity
+                          mfr: JGFG
+                          currency: 2
+                        - supplierName: Sadhana5656
+                          hsnCode: '7879'
+                          supplierId: 12
+                          supplierPartNo: '1237'
+                          description: Steelbird SBA-3 R2K Classic Open Face Helmet in White Motorbike Helmet  (White With Plain Visor)
+                          currencySymbol: INR
+                          entityId: 2
+                          itemNo: '127'
+                          categoryCode: null
+                          itemId: 9
+                          uom: Ea
+                          price: 50
+                          entityName: KLM India Entity
+                          mfr: JKJK
+                          currency: 2
+                        - supplierName: Sadhana5656
+                          hsnCode: '9898'
+                          supplierId: 12
+                          supplierPartNo: '1298'
+                          description: APTECHDEALS Micro DC 3-6V Micro Submersible Mini Water Pump Motor Control Electronic Hobby Kit
+                          currencySymbol: INR
+                          entityId: 2
+                          itemNo: '126'
+                          categoryCode: null
+                          itemId: 8
+                          uom: Ea
+                          price: 50
+                          entityName: KLM India Entity
+                          mfr: NMNCM
+                          currency: 2
+                        - supplierName: Sadhana5656
+                          hsnCode: '7879'
+                          supplierId: 12
+                          supplierPartNo: '1341'
+                          description: 'Battery Operated, 3 Battteries'
+                          currencySymbol: INR
+                          entityId: 2
+                          itemNo: '125'
+                          categoryCode: null
+                          itemId: 7
+                          uom: Ea
+                          price: 50
+                          entityName: KLM India Entity
+                          mfr: NMNCM
+                          currency: 2
+                        - supplierName: Sadhana5656
+                          hsnCode: '7878'
+                          supplierId: 12
+                          supplierPartNo: '51671'
+                          description: VOCs in car interiors
+                          currencySymbol: INR
+                          entityId: 2
+                          itemNo: '124'
+                          categoryCode: null
+                          itemId: 6
+                          uom: Ea
+                          price: 50
+                          entityName: KLM India Entity
+                          mfr: JKJK
+                          currency: 2
+                        - supplierName: Sadhana5656
+                          hsnCode: '6767'
+                          supplierId: 12
+                          supplierPartNo: '5161'
+                          description: Press workability evaluations
+                          currencySymbol: INR
+                          entityId: 2
+                          itemNo: '123'
+                          categoryCode: null
+                          itemId: 5
+                          uom: Ea
+                          price: 50
+                          entityName: KLM India Entity
+                          mfr: IPIO
+                          currency: 2
+                        - supplierName: Sadhana5656
+                          hsnCode: '2345'
+                          supplierId: 12
+                          supplierPartNo: '6626'
+                          description: 'Lithium-ion batteries '
+                          currencySymbol: INR
+                          entityId: 2
+                          itemNo: '122'
+                          categoryCode: null
+                          itemId: 4
+                          uom: Ea
+                          price: 50
+                          entityName: KLM India Entity
+                          mfr: UIU
+                          currency: 2
+                        - supplierName: Sadhana5656
+                          hsnCode: '1234'
+                          supplierId: 12
+                          supplierPartNo: '67647'
+                          description: glass box
+                          currencySymbol: INR
+                          entityId: 2
+                          itemNo: '121'
+                          categoryCode: null
+                          itemId: 3
+                          uom: Ea
+                          price: 0
+                          entityName: KLM India Entity
+                          mfr: KLHGJ
+                          currency: 2
+                        - supplierName: null
+                          hsnCode: '7878'
+                          supplierId: 0
+                          supplierPartNo: ''
+                          description: electrical
+                          currencySymbol: TZS
+                          entityId: 2
+                          itemNo: Capacitor
+                          categoryCode: null
+                          itemId: 18
+                          uom: Ea
+                          price: 33
+                          entityName: KLM India Entity
+                          mfr: Cap
+                          currency: 9
+                        - supplierName: adore-tech
+                          hsnCode: '1234'
+                          supplierId: 20
+                          supplierPartNo: ''
+                          description: glass box
+                          currencySymbol: EUR
+                          entityId: 2
+                          itemNo: '121'
+                          categoryCode: null
+                          itemId: 3
+                          uom: Ea
+                          price: 100
+                          entityName: KLM India Entity
+                          mfr: KLHGJ
+                          currency: 6
+                        - supplierName: null
+                          hsnCode: '1234'
+                          supplierId: 0
+                          supplierPartNo: ''
+                          description: glass box
+                          currencySymbol: INR
+                          entityId: 2
+                          itemNo: '121'
+                          categoryCode: null
+                          itemId: 3
+                          uom: Ea
+                          price: 99
+                          entityName: KLM India Entity
+                          mfr: KLHGJ
+                          currency: 2
+                        - supplierName: adore-tech
+                          hsnCode: ''
+                          supplierId: 20
+                          supplierPartNo: ''
+                          description: Consumable item for JO
+                          currencySymbol: EUR
+                          entityId: 2
+                          itemNo: '23123'
+                          categoryCode: null
+                          itemId: 16
+                          uom: Ea
+                          price: 100
+                          entityName: KLM India Entity
+                          mfr: ''
+                          currency: 6
+                        - supplierName: adore-tech
+                          hsnCode: ''
+                          supplierId: 20
+                          supplierPartNo: ''
+                          description: Laptop
+                          currencySymbol: EUR
+                          entityId: 2
+                          itemNo: '34523452'
+                          categoryCode: null
+                          itemId: 14
+                          uom: Ea
+                          price: 100
+                          entityName: KLM India Entity
+                          mfr: ''
+                          currency: 6
+                        - supplierName: adore-tech
+                          hsnCode: '4545'
+                          supplierId: 20
+                          supplierPartNo: ''
+                          description: DISCOUNT TEST
+                          currencySymbol: EUR
+                          entityId: 2
+                          itemNo: '0099'
+                          categoryCode: null
+                          itemId: 19
+                          uom: Ea
+                          price: 50
+                          entityName: KLM India Entity
+                          mfr: MSN
+                          currency: 6
+                        - supplierName: supplier test
+                          hsnCode: '12343'
+                          supplierId: 21
+                          supplierPartNo: ''
+                          description: Mouse
+                          currencySymbol: INR
+                          entityId: 2
+                          itemNo: '444'
+                          categoryCode: null
+                          itemId: 23
+                          uom: Ea
+                          price: 50
+                          entityName: KLM India Entity
+                          mfr: man787
+                          currency: 2
+                        - supplierName: supplier test
+                          hsnCode: ''
+                          supplierId: 21
+                          supplierPartNo: ''
+                          description: 'asdfasdf & item test & 123'
+                          currencySymbol: INR
+                          entityId: 2
+                          itemNo: e2141234
+                          categoryCode: null
+                          itemId: 22
+                          uom: Ea
+                          price: 345
+                          entityName: KLM India Entity
+                          mfr: ''
+                          currency: 2
+                        - supplierName: supplier test
+                          hsnCode: ''
+                          supplierId: 21
+                          supplierPartNo: ''
+                          description: New item not in warehouse
+                          currencySymbol: INR
+                          entityId: 2
+                          itemNo: '35234'
+                          categoryCode: null
+                          itemId: 20
+                          uom: Ea
+                          price: 24
+                          entityName: KLM India Entity
+                          mfr: ''
+                          currency: 2
+                        - supplierName: supplier test
+                          hsnCode: '4545'
+                          supplierId: 21
+                          supplierPartNo: ''
+                          description: DISCOUNT TEST
+                          currencySymbol: INR
+                          entityId: 2
+                          itemNo: '0099'
+                          categoryCode: null
+                          itemId: 19
+                          uom: Ea
+                          price: 63
+                          entityName: KLM India Entity
+                          mfr: MSN
+                          currency: 2
+                        - supplierName: supplier test
+                          hsnCode: '7878'
+                          supplierId: 21
+                          supplierPartNo: ''
+                          description: electrical
+                          currencySymbol: INR
+                          entityId: 2
+                          itemNo: Capacitor
+                          categoryCode: null
+                          itemId: 18
+                          uom: Ea
+                          price: 23
+                          entityName: KLM India Entity
+                          mfr: Cap
+                          currency: 2
+                        - supplierName: supplier test
+                          hsnCode: ''
+                          supplierId: 21
+                          supplierPartNo: ''
+                          description: Bearing sales item
+                          currencySymbol: INR
+                          entityId: 2
+                          itemNo: '734634'
+                          categoryCode: null
+                          itemId: 17
+                          uom: Ea
+                          price: 34
+                          entityName: KLM India Entity
+                          mfr: ''
+                          currency: 2
+                        - supplierName: supplier test
+                          hsnCode: ''
+                          supplierId: 21
+                          supplierPartNo: ''
+                          description: Consumable item for JO
+                          currencySymbol: INR
+                          entityId: 2
+                          itemNo: '23123'
+                          categoryCode: null
+                          itemId: 16
+                          uom: Ea
+                          price: 3
+                          entityName: KLM India Entity
+                          mfr: ''
+                          currency: 2
+                        - supplierName: supplier test
+                          hsnCode: ''
+                          supplierId: 21
+                          supplierPartNo: ''
+                          description: New Sales item 79
+                          currencySymbol: INR
+                          entityId: 2
+                          itemNo: '9458029'
+                          categoryCode: null
+                          itemId: 15
+                          uom: Ea
+                          price: 56
+                          entityName: KLM India Entity
+                          mfr: ''
+                          currency: 2
+                        - supplierName: supplier test
+                          hsnCode: ''
+                          supplierId: 21
+                          supplierPartNo: ''
+                          description: Laptop
+                          currencySymbol: INR
+                          entityId: 2
+                          itemNo: '34523452'
+                          categoryCode: null
+                          itemId: 14
+                          uom: Ea
+                          price: 23
+                          entityName: KLM India Entity
+                          mfr: ''
+                          currency: 2
+                        - supplierName: supplier test
+                          hsnCode: '12345'
+                          supplierId: 21
+                          supplierPartNo: ''
+                          description: motar
+                          currencySymbol: INR
+                          entityId: 2
+                          itemNo: '188'
+                          categoryCode: null
+                          itemId: 13
+                          uom: Ea
+                          price: 56
+                          entityName: KLM India Entity
+                          mfr: ''
+                          currency: 2
+                        - supplierName: supplier test
+                          hsnCode: '9087'
+                          supplierId: 21
+                          supplierPartNo: ''
+                          description: Skaters-plastic
+                          currencySymbol: INR
+                          entityId: 2
+                          itemNo: '130'
+                          categoryCode: null
+                          itemId: 12
+                          uom: Ea
+                          price: 3
+                          entityName: KLM India Entity
+                          mfr: GHSGH
+                          currency: 2
+                        - supplierName: supplier test
+                          hsnCode: '8990'
+                          supplierId: 21
+                          supplierPartNo: ''
+                          description: 'mile2u Retailers Analog 40.5 cm X 40.5 cm Wall Clock  (Black, With Glass)'
+                          currencySymbol: INR
+                          entityId: 2
+                          itemNo: '129'
+                          categoryCode: null
+                          itemId: 11
+                          uom: Ea
+                          price: 34
+                          entityName: KLM India Entity
+                          mfr: DGDFF
+                          currency: 2
+                        - supplierName: supplier test
+                          hsnCode: '2987'
+                          supplierId: 21
+                          supplierPartNo: ''
+                          description: 'oy Shack 1:20 Off Roader Rock Crawler Rechargeable Truck with 2.4Ghz Remote Control Toy for Kids | Drive on Sandy, Rocky, Grassland  (Green)'
+                          currencySymbol: INR
+                          entityId: 2
+                          itemNo: '128'
+                          categoryCode: null
+                          itemId: 10
+                          uom: Ea
+                          price: 23
+                          entityName: KLM India Entity
+                          mfr: JGFG
+                          currency: 2
+                        - supplierName: supplier test
+                          hsnCode: '7879'
+                          supplierId: 21
+                          supplierPartNo: '32434324'
+                          description: Steelbird SBA-3 R2K Classic Open Face Helmet in White Motorbike Helmet  (White With Plain Visor)
+                          currencySymbol: INR
+                          entityId: 2
+                          itemNo: '127'
+                          categoryCode: null
+                          itemId: 9
+                          uom: Ea
+                          price: 63
+                          entityName: KLM India Entity
+                          mfr: JKJK
+                          currency: 2
+                        - supplierName: adore-tech
+                          hsnCode: '7878'
+                          supplierId: 20
+                          supplierPartNo: '900'
+                          description: electrical
+                          currencySymbol: INR
+                          entityId: 2
+                          itemNo: Capacitor
+                          categoryCode: null
+                          itemId: 18
+                          uom: Ea
+                          price: 100
+                          entityName: KLM India Entity
+                          mfr: Cap
+                          currency: 2
+                        - supplierName: Book my show
+                          hsnCode: '7878'
+                          supplierId: 9
+                          supplierPartNo: '1234'
+                          description: electrical
+                          currencySymbol: INR
+                          entityId: 2
+                          itemNo: Capacitor
+                          categoryCode: null
+                          itemId: 18
+                          uom: Ea
+                          price: 122.22
+                          entityName: KLM India Entity
+                          mfr: Cap
+                          currency: 2
+                        - supplierName: Book my show
+                          hsnCode: '12345'
+                          supplierId: 9
+                          supplierPartNo: '6789'
+                          description: motar
+                          currencySymbol: INR
+                          entityId: 2
+                          itemNo: '188'
+                          categoryCode: null
+                          itemId: 13
+                          uom: Ea
+                          price: 55.22
+                          entityName: KLM India Entity
+                          mfr: ''
+                          currency: 2
+                        - supplierName: Book my show
+                          hsnCode: '9087'
+                          supplierId: 9
+                          supplierPartNo: '8908'
+                          description: Skaters-plastic
+                          currencySymbol: INR
+                          entityId: 2
+                          itemNo: '130'
+                          categoryCode: null
+                          itemId: 12
+                          uom: Ea
+                          price: 44.22
+                          entityName: KLM India Entity
+                          mfr: GHSGH
+                          currency: 2
+                        - supplierName: Book my show
+                          hsnCode: '8990'
+                          supplierId: 9
+                          supplierPartNo: '8980'
+                          description: 'mile2u Retailers Analog 40.5 cm X 40.5 cm Wall Clock  (Black, With Glass)'
+                          currencySymbol: INR
+                          entityId: 2
+                          itemNo: '129'
+                          categoryCode: null
+                          itemId: 11
+                          uom: Ea
+                          price: 34.22
+                          entityName: KLM India Entity
+                          mfr: DGDFF
+                          currency: 2
+                        - supplierName: Book my show
+                          hsnCode: '12341234'
+                          supplierId: 9
+                          supplierPartNo: '5678'
+                          description: Item 02
+                          currencySymbol: INR
+                          entityId: 2
+                          itemNo: '5123512'
+                          categoryCode: Electronics
+                          itemId: 27
+                          uom: Ea
+                          price: 33.55
+                          entityName: KLM India Entity
+                          mfr: FASDFASDFQWER
+                          currency: 2
+                        - supplierName: Book my show
+                          hsnCode: ''
+                          supplierId: 9
+                          supplierPartNo: '6789'
+                          description: Item 01 updated with new desc
+                          currencySymbol: INR
+                          entityId: 2
+                          itemNo: '2341341'
+                          categoryCode: null
+                          itemId: 26
+                          uom: Ea
+                          price: 45.55
+                          entityName: KLM India Entity
+                          mfr: ''
+                          currency: 2
+                        - supplierName: supplier test
+                          hsnCode: ''
+                          supplierId: 21
+                          supplierPartNo: '2341234'
+                          description: Item 03
+                          currencySymbol: INR
+                          entityId: 2
+                          itemNo: '61234123'
+                          categoryCode: null
+                          itemId: 28
+                          uom: Ea
+                          price: 50
+                          entityName: KLM India Entity
+                          mfr: ''
+                          currency: 2
+                        - supplierName: supplier test
+                          hsnCode: '12341234'
+                          supplierId: 21
+                          supplierPartNo: '3423434'
+                          description: Item 02
+                          currencySymbol: INR
+                          entityId: 2
+                          itemNo: '5123512'
+                          categoryCode: Electronics
+                          itemId: 27
+                          uom: Ea
+                          price: 100
+                          entityName: KLM India Entity
+                          mfr: FASDFASDFQWER
+                          currency: 2
+                        - supplierName: supplier test
+                          hsnCode: ''
+                          supplierId: 21
+                          supplierPartNo: ''
+                          description: Item 01 updated with new desc
+                          currencySymbol: INR
+                          entityId: 2
+                          itemNo: '2341341'
+                          categoryCode: null
+                          itemId: 26
+                          uom: Ea
+                          price: 500
+                          entityName: KLM India Entity
+                          mfr: ''
+                          currency: 2
+                        - supplierName: null
+                          hsnCode: ''
+                          supplierId: 0
+                          supplierPartNo: ''
+                          description: Laptop
+                          currencySymbol: INR
+                          entityId: 2
+                          itemNo: '34523452'
+                          categoryCode: null
+                          itemId: 14
+                          uom: Ea
+                          price: 50.55
+                          entityName: KLM India Entity
+                          mfr: ''
+                          currency: 2
+                        - supplierName: null
+                          hsnCode: '12345'
+                          supplierId: 0
+                          supplierPartNo: ''
+                          description: motar
+                          currencySymbol: INR
+                          entityId: 2
+                          itemNo: '188'
+                          categoryCode: null
+                          itemId: 13
+                          uom: Ea
+                          price: 100
+                          entityName: KLM India Entity
+                          mfr: ''
+                          currency: 2
+                        - supplierName: Test supplier 01
+                          hsnCode: ''
+                          supplierId: 23
+                          supplierPartNo: '2341325'
+                          description: Bearing sales item
+                          currencySymbol: INR
+                          entityId: 2
+                          itemNo: '734634'
+                          categoryCode: null
+                          itemId: 17
+                          uom: Ea
+                          price: 34
+                          entityName: KLM India Entity
+                          mfr: ''
+                          currency: 2
+                        - supplierName: Test supplier 01
+                          hsnCode: ''
+                          supplierId: 23
+                          supplierPartNo: '1235'
+                          description: Consumable item for JO
+                          currencySymbol: INR
+                          entityId: 2
+                          itemNo: '23123'
+                          categoryCode: null
+                          itemId: 16
+                          uom: Ea
+                          price: 523
+                          entityName: KLM India Entity
+                          mfr: ''
+                          currency: 2
+                        - supplierName: Test supplier 01
+                          hsnCode: ''
+                          supplierId: 23
+                          supplierPartNo: ''
+                          description: New Sales item 79
+                          currencySymbol: INR
+                          entityId: 2
+                          itemNo: '9458029'
+                          categoryCode: null
+                          itemId: 15
+                          uom: Ea
+                          price: 53
+                          entityName: KLM India Entity
+                          mfr: ''
+                          currency: 2
+                        - supplierName: Test supplier 01
+                          hsnCode: ''
+                          supplierId: 23
+                          supplierPartNo: ''
+                          description: Laptop
+                          currencySymbol: INR
+                          entityId: 2
+                          itemNo: '34523452'
+                          categoryCode: null
+                          itemId: 14
+                          uom: Ea
+                          price: 64
+                          entityName: KLM India Entity
+                          mfr: ''
+                          currency: 2
+                        - supplierName: Test supplier 01
+                          hsnCode: ''
+                          supplierId: 23
+                          supplierPartNo: '123'
+                          description: New item not in price list
+                          currencySymbol: INR
+                          entityId: 2
+                          itemNo: '124124123'
+                          categoryCode: null
+                          itemId: 33
+                          uom: Ea
+                          price: 500
+                          entityName: KLM India Entity
+                          mfr: ''
+                          currency: 2
+                        - supplierName: Test supplier 01
+                          hsnCode: '7878'
+                          supplierId: 23
+                          supplierPartNo: '412'
+                          description: laptop-Dell
+                          currencySymbol: INR
+                          entityId: 2
+                          itemNo: '101'
+                          categoryCode: null
+                          itemId: 32
+                          uom: Ea
+                          price: 200
+                          entityName: KLM India Entity
+                          mfr: '7878'
+                          currency: 2
+                        - supplierName: null
+                          hsnCode: ''
+                          supplierId: 0
+                          supplierPartNo: ''
+                          description: New item not in warehouse
+                          currencySymbol: INR
+                          entityId: 2
+                          itemNo: '35234'
+                          categoryCode: null
+                          itemId: 20
+                          uom: Ea
+                          price: 60
+                          entityName: KLM India Entity
+                          mfr: ''
+                          currency: 2
+                        - supplierName: null
+                          hsnCode: '4545'
+                          supplierId: 0
+                          supplierPartNo: null
+                          description: DISCOUNT TEST
+                          currencySymbol: INR
+                          entityId: 2
+                          itemNo: '0099'
+                          categoryCode: null
+                          itemId: 19
+                          uom: Ea
+                          price: 50
+                          entityName: KLM India Entity
+                          mfr: MSN
+                          currency: 2
+                        - supplierName: null
+                          hsnCode: '1234'
+                          supplierId: 0
+                          supplierPartNo: ''
+                          description: Plastics mat description updated
+                          currencySymbol: INR
+                          entityId: 2
+                          itemNo: '909'
+                          categoryCode: null
+                          itemId: 36
+                          uom: Ea
+                          price: 0
+                          entityName: KLM India Entity
+                          mfr: mat4545
+                          currency: 2
+                        - supplierName: adore-tech
+                          hsnCode: '1234'
+                          supplierId: 20
+                          supplierPartNo: ''
+                          description: Plastics mat description updated
+                          currencySymbol: INR
+                          entityId: 2
+                          itemNo: '909'
+                          categoryCode: null
+                          itemId: 36
+                          uom: Ea
+                          price: 0
+                          entityName: KLM India Entity
+                          mfr: mat4545
+                          currency: 2
+                        - supplierName: Book my show
+                          hsnCode: ''
+                          supplierId: 9
+                          supplierPartNo: ''
+                          description: New item for diff currency
+                          currencySymbol: USD
+                          entityId: 2
+                          itemNo: '84578'
+                          categoryCode: null
+                          itemId: 39
+                          uom: Ea
+                          price: 324
+                          entityName: KLM India Entity
+                          mfr: ''
+                          currency: 1
+                        - supplierName: Book my show
+                          hsnCode: '1234'
+                          supplierId: 9
+                          supplierPartNo: ''
+                          description: Plastics mat description updated
+                          currencySymbol: USD
+                          entityId: 2
+                          itemNo: '909'
+                          categoryCode: null
+                          itemId: 36
+                          uom: Ea
+                          price: 34
+                          entityName: KLM India Entity
+                          mfr: mat4545
+                          currency: 1
+                        - supplierName: null
+                          hsnCode: ''
+                          supplierId: 0
+                          supplierPartNo: ''
+                          description: New item for diff currency
+                          currencySymbol: USD
+                          entityId: 2
+                          itemNo: '84578'
+                          categoryCode: null
+                          itemId: 39
+                          uom: Ea
+                          price: 324
+                          entityName: KLM India Entity
+                          mfr: ''
+                          currency: 1
+                        - supplierName: null
+                          hsnCode: '1234'
+                          supplierId: 0
+                          supplierPartNo: ''
+                          description: Plastics mat description updated
+                          currencySymbol: USD
+                          entityId: 2
+                          itemNo: '909'
+                          categoryCode: null
+                          itemId: 36
+                          uom: Ea
+                          price: 23
+                          entityName: KLM India Entity
+                          mfr: mat4545
+                          currency: 1
+                        - supplierName: null
+                          hsnCode: ''
+                          supplierId: 0
+                          supplierPartNo: ''
+                          description: New item for diff currency
+                          currencySymbol: EUR
+                          entityId: 2
+                          itemNo: '84578'
+                          categoryCode: null
+                          itemId: 39
+                          uom: Ea
+                          price: 120
+                          entityName: KLM India Entity
+                          mfr: ''
+                          currency: 6
+                        - supplierName: null
+                          hsnCode: '1234'
+                          supplierId: 0
+                          supplierPartNo: ''
+                          description: Plastics mat description updated
+                          currencySymbol: EUR
+                          entityId: 2
+                          itemNo: '909'
+                          categoryCode: null
+                          itemId: 36
+                          uom: Ea
+                          price: 340
+                          entityName: KLM India Entity
+                          mfr: mat4545
+                          currency: 6
+                        - supplierName: null
+                          hsnCode: ''
+                          supplierId: 0
+                          supplierPartNo: ''
+                          description: New test item
+                          currencySymbol: EUR
+                          entityId: 2
+                          itemNo: '341234'
+                          categoryCode: null
+                          itemId: 35
+                          uom: Ea
+                          price: 560
+                          entityName: KLM India Entity
+                          mfr: ''
+                          currency: 6
+                        - supplierName: null
+                          hsnCode: '9898'
+                          supplierId: 0
+                          supplierPartNo: ''
+                          description: APTECHDEALS Micro DC 3-6V Micro Submersible Mini Water Pump Motor Control Electronic Hobby Kit
+                          currencySymbol: INR
+                          entityId: 2
+                          itemNo: '126'
+                          categoryCode: null
+                          itemId: 8
+                          uom: Ea
+                          price: 743
+                          entityName: KLM India Entity
+                          mfr: NMNCM
+                          currency: 2
+                        - supplierName: null
+                          hsnCode: '7879'
+                          supplierId: 0
+                          supplierPartNo: ''
+                          description: 'Battery Operated, 3 Battteries'
+                          currencySymbol: INR
+                          entityId: 2
+                          itemNo: '125'
+                          categoryCode: null
+                          itemId: 7
+                          uom: Ea
+                          price: 345
+                          entityName: KLM India Entity
+                          mfr: NMNCM
+                          currency: 2
+                        - supplierName: adore-tech
+                          hsnCode: ''
+                          supplierId: 20
+                          supplierPartNo: ''
+                          description: consumable333
+                          currencySymbol: INR
+                          entityId: 2
+                          itemNo: '12300'
+                          categoryCode: null
+                          itemId: 50
+                          uom: Ea
+                          price: 56
+                          entityName: KLM India Entity
+                          mfr: ''
+                          currency: 2
+                        - supplierName: adore-tech
+                          hsnCode: ''
+                          supplierId: 20
+                          supplierPartNo: ''
+                          description: find456
+                          currencySymbol: INR
+                          entityId: 2
+                          itemNo: '400'
+                          categoryCode: null
+                          itemId: 49
+                          uom: Ea
+                          price: 78
+                          entityName: KLM India Entity
+                          mfr: ''
+                          currency: 2
+                        - supplierName: null
+                          hsnCode: '6767'
+                          supplierId: 0
+                          supplierPartNo: ''
+                          description: Press workability evaluations
+                          currencySymbol: USD
+                          entityId: 2
+                          itemNo: '123'
+                          categoryCode: null
+                          itemId: 5
+                          uom: Ea
+                          price: 64
+                          entityName: KLM India Entity
+                          mfr: IPIO
+                          currency: 1
+                        - supplierName: null
+                          hsnCode: '2345'
+                          supplierId: 0
+                          supplierPartNo: ''
+                          description: 'Lithium-ion batteries '
+                          currencySymbol: USD
+                          entityId: 2
+                          itemNo: '122'
+                          categoryCode: null
+                          itemId: 4
+                          uom: Ea
+                          price: 75
+                          entityName: KLM India Entity
+                          mfr: UIU
+                          currency: 1
+                        - supplierName: adore-tech
+                          hsnCode: '2345'
+                          supplierId: 20
+                          supplierPartNo: ''
+                          description: 'Lithium-ion batteries '
+                          currencySymbol: INR
+                          entityId: 2
+                          itemNo: '122'
+                          categoryCode: null
+                          itemId: 4
+                          uom: Ea
+                          price: 100
+                          entityName: KLM India Entity
+                          mfr: UIU
+                          currency: 2
+                        - supplierName: adore-tech
+                          hsnCode: '1234'
+                          supplierId: 20
+                          supplierPartNo: ''
+                          description: glass box
+                          currencySymbol: INR
+                          entityId: 2
+                          itemNo: '121'
+                          categoryCode: null
+                          itemId: 3
+                          uom: Ea
+                          price: 300
+                          entityName: KLM India Entity
+                          mfr: KLHGJ
+                          currency: 2
+                        - supplierName: null
+                          hsnCode: ''
+                          supplierId: 0
+                          supplierPartNo: ''
+                          description: find456
+                          currencySymbol: INR
+                          entityId: 2
+                          itemNo: '400'
+                          categoryCode: null
+                          itemId: 49
+                          uom: Ea
+                          price: 55
+                          entityName: KLM India Entity
+                          mfr: ''
+                          currency: 2
+                        - supplierName: null
+                          hsnCode: ''
+                          supplierId: null
+                          supplierPartNo: null
+                          description: New item for consumables
+                          currencySymbol: null
+                          entityId: 4
+                          itemNo: '234234'
+                          categoryCode: Electronics
+                          itemId: 2
+                          uom: Ea
+                          price: null
+                          entityName: New entity US
+                          mfr: ''
+                          currency: null
+                        - supplierName: null
+                          hsnCode: ''
+                          supplierId: null
+                          supplierPartNo: null
+                          description: asdfasdf
+                          currencySymbol: null
+                          entityId: 4
+                          itemNo: e2141234
+                          categoryCode: null
+                          itemId: 24
+                          uom: Ea
+                          price: null
+                          entityName: New entity US
+                          mfr: ''
+                          currency: null
+                        - supplierName: null
+                          hsnCode: '12341234'
+                          supplierId: null
+                          supplierPartNo: null
+                          description: Item 02
+                          currencySymbol: null
+                          entityId: 4
+                          itemNo: '5123512'
+                          categoryCode: Electronics
+                          itemId: 29
+                          uom: Ea
+                          price: null
+                          entityName: New entity US
+                          mfr: FASDFASDFQWER
+                          currency: null
+                        - supplierName: null
+                          hsnCode: ''
+                          supplierId: null
+                          supplierPartNo: null
+                          description: Item 03
+                          currencySymbol: null
+                          entityId: 4
+                          itemNo: '61234123'
+                          categoryCode: null
+                          itemId: 30
+                          uom: Ea
+                          price: null
+                          entityName: New entity US
+                          mfr: ''
+                          currency: null
+                        - supplierName: null
+                          hsnCode: '8989'
+                          supplierId: null
+                          supplierPartNo: null
+                          description: Item -char
+                          currencySymbol: null
+                          entityId: 2
+                          itemNo: '100'
+                          categoryCode: null
+                          itemId: 31
+                          uom: Ea
+                          price: null
+                          entityName: KLM India Entity
+                          mfr: anu787
+                          currency: null
+                        - supplierName: null
+                          hsnCode: ''
+                          supplierId: null
+                          supplierPartNo: null
+                          description: Test Item
+                          currencySymbol: null
+                          entityId: 2
+                          itemNo: '23414'
+                          categoryCode: Electronics
+                          itemId: 34
+                          uom: Ea
+                          price: null
+                          entityName: KLM India Entity
+                          mfr: ''
+                          currency: null
+                        - supplierName: null
+                          hsnCode: '1234'
+                          supplierId: null
+                          supplierPartNo: null
+                          description: Plastics mat
+                          currencySymbol: null
+                          entityId: 4
+                          itemNo: '909'
+                          categoryCode: null
+                          itemId: 37
+                          uom: Ea
+                          price: null
+                          entityName: New entity US
+                          mfr: mat4545
+                          currency: null
+                        - supplierName: null
+                          hsnCode: ''
+                          supplierId: null
+                          supplierPartNo: null
+                          description: item707
+                          currencySymbol: null
+                          entityId: 2
+                          itemNo: '9091'
+                          categoryCode: null
+                          itemId: 48
+                          uom: Ea
+                          price: null
+                          entityName: KLM India Entity
+                          mfr: ''
+                          currency: null
+                        - supplierName: null
+                          hsnCode: '9999'
+                          supplierId: null
+                          supplierPartNo: null
+                          description: Laptop cover
+                          currencySymbol: null
+                          entityId: 2
+                          itemNo: '2233'
+                          categoryCode: null
+                          itemId: 51
+                          uom: Ea
+                          price: null
+                          entityName: KLM India Entity
+                          mfr: L909
+                          currency: null
       operationId: get-items
       description: Get Items
       requestBody:
